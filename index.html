@@ -1,1 +1,36 @@
 ShiPin
+<!doctype html>
+<html>
+	<head> 
+		<meta charset="UTF-8"> 
+		王者荣耀自定义充值
+	</head> 
+	<body> 
+		<p>账号: </p> 
+		<form> 
+			<input type="text" id="Zan" value="980334400"> 
+		</form> 
+		<p> </p> 
+		<p>地区号: </p> 
+		<form> 
+			<input type="text" id="Qu" value="79"> 
+		</form> 
+		<p> </p> 
+		<p>点卷数量: </p> 
+		<form> 
+			<input type="text" id="Su" value="1"> 
+		</form> 
+		<p> </p> 
+		<button type="button" onclick="tiaoz()">充值跳转</button> 
+		<p> </p> 
+		<p>注意:本充值只是调用接口，请到QQ里打开本链接</p> 
+		<script type="text/javascript">
+				var Zan = document.getElementById("Zan").value;
+				var Qu = parseInt(document.getElementById("Qu").value) + 1010;
+				var Su = document.getElementById("Su").value;
+				function tiaoz(){
+					window.location.href = "pay.qq.com/h5/index.shtml?m=buy&c=game&dialog=0&midasApiVersion=5&transactionid=CC8E5656-EEC9-4ADD-865E-D4D81C258D691558348901265&dh=1&pf=mds_storeopen_qb-__mds_default_v1_0_0.navgame_v1.0-android&appid=1450002258&zoneid="+Qu+"&n="+Su+"&as=1&aid=&wxAppid2=wx951bdcac522929b6&u="+Zan
+				}
+			</script>  
+	</body>
+</html>
